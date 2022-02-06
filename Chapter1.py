@@ -17,6 +17,12 @@ import sqlalchemy
 import networkx as nx 
 G = nx.Graph()
 
+import random
+from numpy import random as nprand
+seed = hash("Network Science in Python") % 2**32
+nprand.seed(seed)
+random.seed(seed)
+
 # Functions
 
 
